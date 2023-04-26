@@ -1,3 +1,15 @@
+/*
+Implemente um programa que leia as variáveis a, b e c e imprima os valores das quatros
+fórmulas seguintes:
+
+a) (a ∗ b) / c
+b) a^2 + b + 5c
+c) a * b * c + b + ((c/3)*5) - 1
+d) ("(a * b * c)^3 / 2
+
+*/
+
+
 #include <stdio.h>
 #include <math.h>
 
