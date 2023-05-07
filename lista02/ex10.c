@@ -1,17 +1,3 @@
-/*
-Toda apresentação de trabalho tem seus requisitos mínimos que precisam ser atendidos,
-caso contrário, ele não ́e aceito e o aluno fica com nota 0. Suponha uma apresentação de
-programação com os seguintes requisitos mínimos:
-
-Requisito 1: Inferface gráfica OU Inteligência Artificial.
-Requisito 2: Encapsulamento E Indentação
-Requisito 3: Uso de Structs
-
-Dada a entrada, descubra se o aluno ficou com 0 ou o seu trabalho será avaliado. A entrada
-é composta de 5 números, representando respectivamente Interface Gráfica, Inteligência
-Artificial, Encapsulamento, Identação e Structs. Os números podem ser: 0 - Se o trabalho
-não possui tal quesito. 1 - Se o trabalho possui tal quesito.
-*/
 
 #include <stdio.h>
 
