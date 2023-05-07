@@ -54,7 +54,6 @@ int main(){
         printf("\nO ponto (%i,%i) pertence ao quarto quadrante.",x,y);
     }
     
-    
     return 0;
 }
 

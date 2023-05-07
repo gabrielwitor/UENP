@@ -30,4 +30,6 @@ int main(){
     }
 
     printf("Ordem decrescente: %i %i %i",a ,b ,c);
+
+    return 0;
 }
