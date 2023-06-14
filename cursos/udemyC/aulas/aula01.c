@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(){
+int main(){ //main -> função principal
     printf("Hello, world");
 
     return 0;
