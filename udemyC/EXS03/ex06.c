@@ -4,7 +4,6 @@ A fórmula de conversão é: F = C (9.0/5.0) + 32.0, sendo F a temperatura em Fa
 e C a temperatura em Celsius.
 */
 
-
 #include <stdio.h>
 
 int main(){
