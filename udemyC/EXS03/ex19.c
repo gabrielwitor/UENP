@@ -13,5 +13,9 @@ int main(){
     printf("Digite o volume em litros: ");
     scanf("%f",&l);
 
+    m = l / 1000;
+
+    printf("%.2f litros equivalem a %.2fm cubicos",l,m);
+
     return 0;
 }

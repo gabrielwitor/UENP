@@ -8,13 +8,14 @@ S = 1 + 1/2 + 1/3 + 1/4 + 1/n
 #include <stdio.h>
 
 int main(){
-    float i, n, soma = 0;
+    int i, n; 
+    float soma = 0;
 
     printf("Digite um numero inteiro: ");
-    scanf("%f",&n);
+    scanf("%d",&n);
 
     for (i = 1; i <= n; i++){
-        soma += (1/i);
+        soma += (1/(float)i);
     }
     
     printf("\nValor da soma: %.3f",soma);
