@@ -7,7 +7,7 @@ Faça uma função que receba um caractere e verifique se ele é uma vogal ou n�
 
 void isitvowel(char letter){
     letter = tolower(letter);
-    (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') ? printf("\"%c\" e vogal", letter) : printf("\"%c\" nao e vogal",letter);
+    (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') ? printf("\"%c\" e vogal\n", letter) : printf("\"%c\" nao e vogal\n",letter);
 }
 
 int main(){
