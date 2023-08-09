@@ -6,8 +6,10 @@ Faça uma função que receba um caractere e verifique se ele é uma vogal ou n�
 #include <ctype.h>
 
 void isitvowel(char letter){
+    printf("'%c'",letter);
     letter = tolower(letter);
-    (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') ? printf("\"%c\" e vogal\n", letter) : printf("\"%c\" nao e vogal\n",letter);
+    (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') 
+    ? printf(" e vogal\n") : printf(" nao e vogal\n");
 }
 
 int main(){
