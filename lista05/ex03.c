@@ -5,7 +5,7 @@ Imprima os dois vetores resultante.
 */
 
 #include <stdio.h>
-#define TAM 10
+#define TAM 50
 
 int main(){
     int vetor[TAM], vetorpar[TAM], vetorimp[TAM], iteradorpar = 0, iteradorimp  = 0;

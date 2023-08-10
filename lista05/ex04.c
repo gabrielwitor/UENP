@@ -18,7 +18,7 @@ int main(){
 
     for (int i = 0; i < TAM; i++){
         if (vetor [i] == vetor[TAM-1]){
-            printf("%d",i);
+            printf("%d ",i);
         }
     }
 
