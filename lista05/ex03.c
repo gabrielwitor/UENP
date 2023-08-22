@@ -5,12 +5,12 @@ Imprima os dois vetores resultante.
 */
 
 #include <stdio.h>
-#define TAM 50
+#define QTD 50
 
 int main(){
-    int vetor[TAM], vetorpar[TAM], vetorimp[TAM], iteradorpar = 0, iteradorimp  = 0;
+    int vetor[QTD], vetorpar[QTD], vetorimp[QTD], iteradorpar = 0, iteradorimp  = 0;
 
-    for(int i = 0; i < TAM; i++){
+    for(int i = 0; i < QTD; i++){
         printf("Digite o numero %d da lista: ",i+1);
         scanf("%d",&vetor[i]);
 
