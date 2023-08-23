@@ -7,9 +7,7 @@ deve exibir a matriz resultante.
 
 #include <stdio.h>
 
-#define QTD 100 //Tamanho máximo da matrix. Utilizada para inicialização da matrix.
-
-void escevematriz(int matriz[QTD][QTD], int tam){
+void escevematriz(int tam, int matriz[tam][tam]){
     for (int i = 0; i < tam; i++){
         for (int j = 0; j < tam; j++){
             printf("Digite o elemento de posicao [%d %d]: ",i,j);
@@ -18,7 +16,7 @@ void escevematriz(int matriz[QTD][QTD], int tam){
     }
 }
 
-void multdiagsec(int matriz[QTD][QTD], int tam, int mult){
+void multdiagsec(int tam, int matriz[tam][tam], int mult){
     int j = tam - 1;
     for (int i = 0; i < tam; i++){
         matriz[i][j] *= mult;
@@ -26,7 +24,7 @@ void multdiagsec(int matriz[QTD][QTD], int tam, int mult){
     }
 }
 
-void lematriz(int matriz[QTD][QTD], int tam){
+void lematriz(int tam, int matriz[tam][tam]){
     for(int i = 0; i < tam; i++){
         for (int j = 0; j < tam; j++){
             printf("%d ",matriz[i][j]);
@@ -44,15 +42,15 @@ int main(){
     printf("Digite a constante pela qual sera multiplicada a diagonal secundaria: ");
     scanf("%d",&mult);
 
-    int matriz[QTD][QTD];
+    int matriz[tam][tam];
 
-    escevematriz(matriz, tam);
+    escevematriz(tam, matriz);
     printf("Matriz original: \n");
-    lematriz(matriz,tam);
+    lematriz(tam, matriz);
 
-    multdiagsec(matriz,tam,mult);
+    multdiagsec(tam, matriz,mult);
     printf("Matriz com diagonal secundaria multiplicada por %d: \n",mult);
-    lematriz(matriz,tam);
+    lematriz(tam, matriz);
 
     return 0;
 }

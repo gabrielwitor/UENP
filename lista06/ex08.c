@@ -5,9 +5,7 @@ por meio de uma função, a soma dos elementos que não pertencem a nenhuma das 
 */
 #include <stdio.h>
 
-#define QTD 50 //Tamanho máximo da matriz. Utilizado para iniciar matriz.
-
-void lematriz(float matriz[QTD][QTD], int tam){
+void lematriz(int tam, float matriz[tam][tam]){
     for (int i = 0; i < tam; i++){
         for (int j = 0; j < tam; j++){
             printf("Escreva o elemento de posicao [%d %d]: ",i,j);
@@ -16,7 +14,7 @@ void lematriz(float matriz[QTD][QTD], int tam){
     }
 }
 
-void soma(float matriz[QTD][QTD], int tam){
+void soma(int tam, float matriz[tam][tam]){
     float soma = 0;
     for (int i = 0; i < tam; i++){
         for (int j = 0; j < tam; j++){
@@ -32,12 +30,14 @@ void soma(float matriz[QTD][QTD], int tam){
 
 int main(){
     int tam; 
-    float matriz[QTD][QTD];
+    
     printf("Digite o tamanho da matriz: ");
     scanf("%d",&tam);
 
-    lematriz(matriz, tam);
-    soma(matriz,tam);
+    float matriz[tam][tam];
+
+    lematriz(tam, matriz);
+    soma(tam, matriz);
 
     return 0;
 }
