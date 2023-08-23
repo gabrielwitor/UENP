@@ -19,7 +19,6 @@ int main(){
         }
     }
 
-
     for(int i = 0; i < QTDL; i++){
         for (int j = 0; j < QTDC; j++){
             if ((matriz[i][j] % 3) == 0){
