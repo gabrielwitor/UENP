@@ -1,4 +1,9 @@
-# UENP
-Tarefas e anotações das aulas de programação na Universidade Estadual do Norte do Paraná.
+# Repositório - Universidade Estadual do Norte do Paraná
 
-Todos os exercícios realizados estão acompanhados de seus respectivos enunciados. Sinta-se livre para utilizar os códigos presentes aqui da forma que desejar.
+Repositório utilizado para armazenar os códigos e projetos realizados durante a minha formação em Ciência da Computação na Universidade Estadual do Norte do Paraná ([UENP](https://uenp.edu.br)).
+
+Os exercícios de programação estão todos acompanhados de seus respectivos enunciados. Utilize-os da forma que desejar.
+
+## Autores
+
+- [@gabrielwitor](https://github.com/gabrielwitor)
