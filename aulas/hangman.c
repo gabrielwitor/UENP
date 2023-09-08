@@ -20,28 +20,8 @@ int main() {
     while (stage < 6) {
         belongs = 0, verify = 0;
 
-        switch (stage)
-        {
-        case 1:
-            playerhangedman[0] = hangedman[0];
-            break;
-        case 2:
-            playerhangedman[1] = hangedman[1];
-            break;
-        case 3:
-            playerhangedman[2] = hangedman[2];
-            break;
-        case 4:
-            playerhangedman[3] = hangedman[3];
-            break;
-        case 5:
-            playerhangedman[4] = hangedman[4];
-            break;
-         case 6:
-            playerhangedman[5] = hangedman[5];
-            break;
-        default:
-            break;
+        if(stage>=1){
+            playerhangedman[stage-1] = hangedman[stage-1];
         }
 
         printf(
