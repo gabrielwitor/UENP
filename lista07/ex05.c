@@ -12,7 +12,7 @@ maiúsculas e/ou minúsculas.
 int countvogals(char *string, char *vogals){
     int count = 0;
     for (int i = 0; i < MAXSIZE; i++){
-        
+
         if (string[i] == '\n')
             break; 
 
@@ -33,7 +33,7 @@ int main(){
     printf("Digite a frase: ");
     fgets(string, MAXSIZE, stdin);
 
-    printf("%d",countvogals(string, vogals));
+    printf("Total de vogais: [%d]",countvogals(string, vogals));
 
     return 0;
 }
