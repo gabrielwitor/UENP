@@ -13,25 +13,26 @@ programar em linguagem C, o resultado deve ser C megaugnil me ramargorp.
 
 int main(){
     char phrase[MAXSIZE], invertedphrase[MAXSIZE];
+    int count = 0, position; // count -> variavel utilizada para preencher string inverttida
 
     printf("Digite a frase: ");
     fgets(phrase,MAXSIZE,stdin);
 
-    for (int i = MAXSIZE; i >= 0; i--)
-        invertedphrase[MAXSIZE-i] = phrase[i];
+    strcpy(invertedphrase,phrase); //posição do /n e do /0 permanecem a mesma.
 
-    int pos = 0;
-
-    while(1) //encontrando a posição do '/n'. É necessário para imprimir a frase sem memória lixo, pois indica qual posição a frase começa.
-        if(invertedphrase[pos] == '\n'){
+    for (int i = 0; i < MAXSIZE; i++){
+        if(phrase[i] == '\0'){
+            position = i;
             break;
-        } else pos++;
-
-    printf("\nFrase invertida: ");
-
-    for(int i = pos+1; i <= MAXSIZE;i++){ //imprimindo a partir da posição do '\n'.
-        printf("%c",invertedphrase[i]);
+        }
     }
+
+    for(int i = position-2; i >= 0; i--){ //(-2) desconsidera o \n e o \0. Assim, preencho a string somente com os caracteres invertidos.
+        invertedphrase[count] = phrase[i];
+        count++;
+    }
+
+    printf("Frase invertida: %s",invertedphrase);
 
     return 0;
 }
