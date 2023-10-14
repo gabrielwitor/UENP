@@ -52,7 +52,7 @@ int main(){
     for(int i = 0; i < n; i++){
         int sum = 0;
         for (int j = 0; j < m; j++){
-            sum += Storage[j][i];
+            sum += Storage[i][j];
         }
         printf("Quantidade de produtos [%d] nas lojas = %d\n",i,sum);
     }

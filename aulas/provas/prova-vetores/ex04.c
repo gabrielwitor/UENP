@@ -54,7 +54,7 @@ int main(){
     scanf("%d",&subjectID);
 
     if(findSubjectID(subjectID,subjectsIDs) != -1){
-        printf("Quantidade: %d\n",searchForSpecificStudents(findSubjectID(subjectID,subjectsIDs), studentAges, subjectsIDs, studentTests));
+        printf("Quantidade de alunos entre 18 e 25 anos que fizeram mais de duas provas na materia de codigo [%d]: %d\n",subjectID,searchForSpecificStudents(findSubjectID(subjectID,subjectsIDs), studentAges, subjectsIDs, studentTests));
     } else {
         printf("O codigo [%d] e invalido.\n",subjectID);
     }
@@ -108,5 +108,8 @@ float averageAgeofSpecificStudents(int *studentAges, int *subjectsIDs, int stude
             }
         }
     }
+    if(counter == 0)
+        return 0;
+
     return (float)sumOfAges/counter;
 }
