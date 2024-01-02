@@ -36,7 +36,7 @@ int main(){
         frase_invertida[i] = frase[indiceFinalFrase-2-i];
     }
 
-    printf("Frase: %s\n",frase_invertida);
+    printf("Frase invertida: %s\n",frase_invertida);
 
     return 0;
 }
