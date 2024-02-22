@@ -3,12 +3,6 @@ Faca uma funcao que receba como parametros um vetor e seu tamanho. Grave-o em um
 arquivo texto. Cada valor do vetor deve ser salvo em uma linha do arquivo.
 */
 
-/*
-Implemente um programa que leia um vetor de inteiros A de 20 elementos e guarde tais
-valores em um arquivo, um por linha. Depois, reabra o arquivo e leia os elementos para o
-vetor B, verificando se os valores foram gravados corretamente.
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 
